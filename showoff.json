@@ -1,7 +1,11 @@
 {
-  "name": "Something",
-  "description": "Example Presentation",
+  "name": "Ubilabs - Google Maps API Best Practices",
+  "description": "What We Have Learned",
   "sections": [
-    {"section":"maps"}
+    {"section":"intro"},
+    {"section":"style"},
+    {"section":"performance"},
+    {"section":"large_data"},
+    {"section":"tools"}
   ]
 }

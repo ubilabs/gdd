@@ -45,32 +45,6 @@ http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html
     map.mapTypes.set('My Style', my_style);
     map.setMapTypeId('My Style');
 
-!SLIDE
-
-# Cloude Made #
-
-
-!SLIDE center
-![Cloud Made](cloud_made.png)
-
-!SLIDE
-
-    TILE_URL: new Template(
-      "http://#{host}.tile.cloudmade.com/#{key}/#{style}/256/#{z}/#{x}/#{y}.png"
-    ),
-    
-    _getTileUrl: function(tile, zoom){
-      var host = ["a", "b", "c"][(tile.x + tile.y) % 3];
-
-      return this.TILE_URL.evaluate({
-        host: host,
-        key: this.CLOUDMAP_KEY,
-        style: this.styleID,
-        x: tile.x,
-        y: tile.y,
-        z: zoom
-      });
-    }
     
 !SLIDE bullets
 

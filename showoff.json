@@ -7,6 +7,8 @@
     {"section":"style"},
     {"section":"performance"},
     {"section":"large_data"},
-    {"section":"tools"}
+    {"section":"html"},
+    {"section":"tools"},
+    {"section":"outro"}
   ]
 }

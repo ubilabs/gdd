@@ -1,53 +1,6 @@
 
 !SLIDE bullets
 
-# Use your Style #
-
-* Infowindow Background
-* Styles Maps
-* Static + Styled Maps
-
-!SLIDE
-  
-# Styled Maps #
-
-
-!SLIDE fullscreen
-![Wizzard 1](wizzard_1.png)
-
-
-http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html
-
-    @@@javascript
-    var styles = [
-      {
-        featureType: "all",
-        elementType: "all",
-        stylers: [
-          { saturation: -100 }
-        ]
-      },{
-        featureType: "water",
-        elementType: "all",
-        stylers: [
-          { saturation: 58 },
-          { hue: "#0091ff" },
-          { lightness: -30 }
-        ]
-      }
-    ];
-
-    var my_style = new google.maps.StyledMapType(styles, {
-      map: map,
-      name: 'My Style'
-    });
-
-    map.mapTypes.set('My Style', my_style);
-    map.setMapTypeId('My Style');
-
-    
-!SLIDE bullets
-
 # Static Maps #
 
 * No JavaScript
@@ -117,4 +70,3 @@ http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html
 
 !SLIDE center
 ![Markers Custom](markers_custom.png)
-

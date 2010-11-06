@@ -4,6 +4,7 @@
   "sections": [
     {"section":"intro"},
     {"section":"design"},
+    {"section":"styled_maps"},
     {"section":"style"},
     {"section":"performance"},
     {"section":"large_data"},

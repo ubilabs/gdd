@@ -1,8 +1,62 @@
-HTTP Web Services (Geocoding, Elevation, Directions)
+!SLIDE title-slide
+
+# Tools #
+
+!SLIDE bullets
+## Google Spreadsheets ##
+
+* No server setup
+* Import and edit your data
+* Create custom scripts and formulas
+* Access via JSONP
+
+
+    
+
+!SLIDE
+
+### Spreadsheet Formulas ###
+
+    @@@sh
+    =SUM(A2;B2)
+    =CONCAT(A2;B2)
+    =UPPER(B2)
+    
+    
+    
+    …
+
+    
+!SLIDE
+
+### Spreadsheet Formulas ###
+
+    @@@sh
+    =SUM(A2;B2)
+    =CONCAT(A2;B2)
+    =UPPER(B2)
+
+    =MY_FORMULA(B2)
+
+    …
+
+    
+!SLIDE
+
+### Spreadsheet Formulas ###
+
+    @@@sh
+    =SUM(A2;B2)
+    =CONCAT(A2;B2)
+    =UPPER(B2)
+
+    =MY_FORMULA(B2)
+
+    =GEOCODE(B2)
 
 
 !SLIDE
-# Spreadsheets #
+### Geocode Formula ###
 
     @@@javascript
     var geocoder = Maps.newGeocoder();
@@ -16,21 +70,17 @@ HTTP Web Services (Geocoding, Elevation, Directions)
       } 
       return "";
     }
-    
 
-!SLIDE
-
-    @@@sh
-    =GEOCODE(D11;E11)
+!SLIDE center
+![Spread](spread.png)
 
 
 !SLIDE
+
+### Map Spreadsheet Data ###
 
     @@@javascript
-    $.getJSON(
-      MY_PUPLIC_SHEET_URL, 
-      data_loaded
-    );
+    $.getJSON("MY_PUPLIC_SHEET_URL", data_loaded);
     
     function data_loaded(data){
       $.each(data.feed.entry, function(){
@@ -42,3 +92,65 @@ HTTP Web Services (Geocoding, Elevation, Directions)
         );
       });
     }
+
+!SLIDE bullets
+
+## Google Analytics ##
+
+* Problem: Single page view
+* Solution: Track events
+* Categories, actions, labels, values
+
+!SLIDE
+### Page Tracking ###
+
+    @@@javascript
+    // track current page
+    pageTracker._trackPageview();
+    
+    // track a virutal page view
+    pageTracker._trackPageview(
+      "/path/to/virtual/page.html"
+    );
+    
+    // example: virtual map view
+    pageTracker._trackPageview(
+      "/map/germany/berlin/reichstag"
+    );
+
+!SLIDE
+### Event Tracking ###
+
+    @@@javascript
+    pageTracker._trackEvent(
+      'category', 
+      'action', 
+      'label (optional)', 
+      'value (optional)'
+    );
+
+
+!SLIDE
+### Track Marker Events ###
+
+    @@@javascript
+    google.maps.event.addListener(
+      marker, 
+      'click',
+      track_click
+    });
+
+    function track_click(){
+      pageTracker._trackEvent([
+        'Marker', 
+        'Click', 
+        marker_title
+      );
+    }
+
+!SLIDE center
+![Analytics 1](analytics_1.png)
+
+!SLIDE center
+![Analytics 1](analytics_2.png)
+

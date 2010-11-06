@@ -1,45 +1,3 @@
-!SLIDE bullets
-
-# Design #
-
-!SLIDE bullets
-
-# Layout #
- 
-!SLIDE bullets 
-
-# Marker #
-
-!SLIDE center 
-
-![Marker](marker.png)
-
-!SLIDE center
-
-![Marker Layers](marker_layers.png)
-
-!SLIDE center
-
-![Marker Positioning](marker_positioning.png)
-
-
-!SLIDE center
-
-# Colors #
-![Colors](colors.png)
-
-
-!SLIDE bullets
-
-# Test Map Types #
-
-
-!SLIDE center
-
-# Infowindow #
-
-![Infowindow](infowindow.png)
-
 
 !SLIDE bullets
 
@@ -54,7 +12,7 @@
 # Styled Maps #
 
 
-!SLIDE center
+!SLIDE fullscreen
 ![Wizzard 1](wizzard_1.png)
 
 

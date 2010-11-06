@@ -3,6 +3,7 @@
   "description": "What We Have Learned",
   "sections": [
     {"section":"intro"},
+    {"section":"design"},
     {"section":"style"},
     {"section":"performance"},
     {"section":"large_data"},

@@ -3,7 +3,7 @@
 
 
 !SLIDE
-# Put Scripts at Bottom #
+## Put Scripts at Bottom ##
 
 !SLIDE
 
@@ -35,11 +35,11 @@
 
 !SLIDE
 
-# Load Asynchronly #
+## Load on Demand ##
 
 !SLIDE console
 
-## Google Loader ##
+### Google Loader ###
 
     @@@html
     <script 
@@ -47,7 +47,7 @@
       src="http://www.google.com/jsapi?key=XYZ"
     ></script>
 
-### ... ###
+<br/>
 
     @@@ javascript
     google.load("maps", "3", {
@@ -57,7 +57,7 @@
 
 !SLIDE
 
-## Plain JavaScript ##
+### Plain JavaScript ###
 
     @@@ javascript
     var script = document.createElement("script"),
@@ -73,7 +73,7 @@
 
 !SLIDE
 
-# jQuery Style #
+### jQuery Style ###
 
     @@@ javascript    
     var url = "http://maps.google.com/maps/api/js?" +
@@ -84,8 +84,20 @@
 
 
 !SLIDE bullets
-# Performance #
+## Performance ##
 
 * Put JS on bottom
-* Cluster
-* Cache in Objects
+* Load scripts and data on demand
+* Reduce set of DOM elements
+* Cache everything
+* …
+
+!SLIDE bullets
+## Performance ##
+
+* -
+* -
+* -
+* -
+* DO NOT USE THE JAVASCRIPT API !
+

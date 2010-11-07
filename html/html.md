@@ -1,12 +1,25 @@
+!SLIDE
+
+# Indexing Data #
+
 !SLIDE bullets incremental
 
-# Microformats #
+## Data Formats
 
-* Are human readable
-* Google will parse this
+* XML - Hard to handle
+* HTML - Where to store the data?
+* JSON - Small but not indexed
+
+!SLIDE bullets incremental
+
+## Microformats ##
+
+* Human readable
+* Recognized by Google
 * YOU can map it
 
 !SLIDE
+### VCard Template
 
     @@@html
     <div class="vcard">
@@ -23,9 +36,37 @@
       </div>
     </div>
 
+!SLIDE
+### VCard Structure
+
+    @@@sh
+    .vcard
+      .adr
+        .street-address "Juliusstraße 25"
+        .locality "Hamburg"
+        .country-name "Germany" 
+      .geo
+        .latitude 53.55
+        .longitude 9.99
+
+!SLIDE bullets
+### CSS
+
+    @@@css  
+    .geo { display: none; }
+
+* 
+* 
+    
+### Visual Output
+    
+    @@@html
+    Juliusstraße 25, Hamburg, Germany
 
 
-!SLIDE bullets incremental
+!SLIDE
+
+### Map VCard Data
 
     @@@javascript
     var $items = $(".vcard");

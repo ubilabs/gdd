@@ -2,10 +2,16 @@
 # Performance #
 
 
-!SLIDE
-## Put Scripts at Bottom ##
+!SLIDE bullets incremental
+
+## Basic Rules
+
+* Put JS at the bottom
+* Load scripts and data on demand
+* Reduce set of DOM elements
 
 !SLIDE
+### Put Scripts at Bottom ##
 
     @@@html
     <html>
@@ -20,6 +26,7 @@
     </html>
 
 !SLIDE
+### Put Scripts at Bottom ##
 
     @@@html
     <html>
@@ -84,18 +91,16 @@
 
 
 !SLIDE bullets
-## Performance ##
+## Perfomance Rules ##
 
-* Put JS on bottom
+* Put JS at the bottom
 * Load scripts and data on demand
 * Reduce set of DOM elements
-* Cache everything
 * …
 
 !SLIDE bullets
-## Performance ##
+## Perfomance Rules ##
 
-* -
 * -
 * -
 * -

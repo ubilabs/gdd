@@ -2,16 +2,19 @@
 
 # Tools #
 
-!SLIDE bullets
+!SLIDE bullets incremental
+## No Server? ##
+
+!SLIDE bullets incremental
+## No Problem! ##
+
+!SLIDE bullets incremental
 ## Google Spreadsheets ##
 
-* No server setup
 * Import and edit your data
-* Create custom scripts and formulas
+* No server setup
 * Access via JSONP
-
-
-    
+* Create custom scripts and formulas
 
 !SLIDE
 
@@ -88,12 +91,12 @@
         var lat_lng = geocode.split(","),
         var position = new google.maps.LatLng(
           lat_lng[0], 
-          lat_lng[0]
+          lat_lng[1]
         );
       });
     }
 
-!SLIDE bullets
+!SLIDE bullets incremental
 
 ## Google Analytics ##
 

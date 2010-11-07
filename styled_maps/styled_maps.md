@@ -10,7 +10,7 @@
 
 !SLIDE
 
-### Style Definitions ###
+### Style Definition ###
 
     @@@javascript
     var styles = [
@@ -34,6 +34,8 @@
 
 
 !SLIDE
+
+### Set Map Style
 
     @@@javascript
     var styles = [ ... ];

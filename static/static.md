@@ -1,5 +1,5 @@
 
-!SLIDE bullets
+!SLIDE bullets incremental
 
 # Static Maps #
 
@@ -7,8 +7,9 @@
 * Single IMG tag
 * Fast as hell
 
-
 !SLIDE
+
+### Simple IMG Tag ###
 
     @@@html
     <img 
@@ -19,11 +20,23 @@
 
 !SLIDE
 
-## Styled Static Maps ##
+### Styled Static Maps ###
 
     @@@sh
     http://maps.google.com/maps/api/staticmap?
     sensor=false&size=512x512&center=Hamburg&zoom=12
+
+
+!SLIDE
+
+### Styled Static Maps ###
+
+    @@@sh
+    http://maps.google.com/maps/api/staticmap?
+      sensor=false
+      &size=512x512
+      &center=Hamburg
+      &zoom=12
 
 !SLIDE center
 
@@ -31,7 +44,7 @@
 
 !SLIDE
 
-## Styled Static Maps ##
+### Styled Static Maps ###
 
     @@@sh
     http://maps.google.com/maps/api/staticmap?
@@ -55,7 +68,7 @@
 
 !SLIDE
 
-## Custom Markers ##
+### Custom Markers ###
 
     @@@sh
     http://maps.google.com/maps/api/staticmap?
@@ -70,3 +83,4 @@
 
 !SLIDE center
 ![Markers Custom](markers_custom.png)
+

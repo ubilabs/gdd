@@ -43,14 +43,16 @@
 ![Info 0](info_2.png)
 
 !SLIDE center
+![Info 0](info_3.png)
+
+!SLIDE center
 # Color #
 
 !SLIDE bullets
 
-## How many markers ##
-
+* How many markers
 * do you see on the 
-* following map?
+* following slide?
 
 !SLIDE center
 ![Camouflage](camouflage.png)

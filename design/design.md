@@ -2,9 +2,9 @@
 
 # Design #
 
-* Defaults
-* Shapes
-* Colors
+* Keep Defaults
+* Shapes on the Map
+* Color Palette
 
 !SLIDE 
 # Marker #

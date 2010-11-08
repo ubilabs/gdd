@@ -260,3 +260,38 @@ pre.sh_sourceCode .sh_value {
   font-weight: normal;
   font-style: normal;
 }
+
+
+
+/**
+* PRINT
+
+
+html, body, #preso {
+  overflow: visible !important;
+}
+
+#preso {
+  height: auto;
+}
+
+#preso, .slide {
+  background:none repeat scroll 0 0 #FFFFFF;
+  border:medium none;
+  display:block !important;
+  opacity:1 !important;
+  position:static !important;
+}
+
+.slide {
+  page-break-before: auto;
+  border: 1px solid #000 !important;
+  margin-bottom: 1em !important;
+}
+
+
+pre {
+  text-shadow: 0 0 0 #FFF !important;
+}
+
+*/
